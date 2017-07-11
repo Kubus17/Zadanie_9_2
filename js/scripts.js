@@ -1,13 +1,12 @@
-// scrip,ts.js
-var a, h, getresult, alert;
-var triangle1Area = getTriangleArea(10, 15),
-    triangle2Area = getTriangleArea(15, 2),
-    triangle3Area = getTriangleArea(10, 5);
-function getTriangleArea(a, h) {
-    if (a <= 0 || h <= 0) {
-        alert("Nieprawidłowe dane");
-    }
-    getresult = a * h / 2;
-    return getresult;
+// scripts.js
+var femaleNames = ['Joanna', 'Anna', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Jarek', 'Jarek'];
+var allNames = femaleNames.concat(maleNames);
+
+console.log('Połączone tablice: ' + allNames);
+
+var newName = 'Marian';
+if (allNames.indexOf(newName) === -1) {
+    var x = allNames.push(newName);
 }
-console.log(getTriangleArea(10, 6));
+console.log('Po sprawdzeniu połączonych tablic dodałem imię Marian: ' + allNames);
